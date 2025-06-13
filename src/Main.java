@@ -1,9 +1,11 @@
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Scanner;
 import java.math.*;
 
 public class Main {
     public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
         Scanner input = new Scanner(System.in);
         String userInput;
         System.out.println("Java-DOS v0.1.1 (C) 2025 JavaIllia Project");
@@ -75,6 +77,15 @@ public class Main {
                 System.out.println("  exit - Exit Java-DOS");
                 System.out.println("  echo - Print the message");
                 System.out.println("  help - Display this help message");
+                System.out.println("  time - Print the time");
+                System.out.println("  runtime - Print the system runtime");
+            } else if (userInput.equals("time")) {
+                Date currentDate = new Date();
+                System.out.println(currentDate);
+            } else if (userInput.equals("runtime")) {
+                long endTime = System.currentTimeMillis();
+                long duration = endTime - startTime;
+                System.out.println("System runtime: " + duration + " milliseconds (" + duration / 1000 + " seconds)");
             } else {
                 System.out.println("Unknown command: " + userInput);
             }
