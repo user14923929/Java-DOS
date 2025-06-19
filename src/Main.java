@@ -8,7 +8,7 @@ public class Main {
         long startTime = System.currentTimeMillis();
         Scanner input = new Scanner(System.in);
         String userInput;
-        System.out.println("Java-DOS v0.1.1 (C) 2025 JavaIllia Project");
+        System.out.println("Java-DOS v0.1.2 (C) 2025 user14923929 All rights reserved.");
         System.out.println("Java version at the time of build: ");
         for (String s : Arrays.asList("java version \"24.0.1\" 2025-04-15\n" +
                 "Java(TM) SE Runtime Environment (build 24.0.1+9-30)\n" +
@@ -20,7 +20,7 @@ public class Main {
             System.out.print("Java-DOS >>> ");
             userInput = input.next();
             if (userInput.equals("about")) {
-                System.out.println("Java-DOS v0.1.2 (C) 2025 JavaIllia Project");
+                System.out.println("Java-DOS v0.1.2 (C) 2025 user14923929 All rights reserved.");
                 System.out.println("Java-DOS is a simple command-line interface for Java.");
                 for (String s : Arrays.asList("java version \"24.0.1\" 2025-04-15\n" +
                         "Java(TM) SE Runtime Environment (build 24.0.1+9-30)\n" +
