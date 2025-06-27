@@ -8,7 +8,7 @@ public class Main {
         long startTime = System.currentTimeMillis();
         Scanner input = new Scanner(System.in);
         String userInput;
-        System.out.println("Java-DOS v0.1.2 (C) 2025 user14923929 All rights reserved.");
+        System.out.println("Java-DOS v0.1.3 (C) 2025 user14923929 All rights reserved.");
         System.out.println("Java-DOS is a simple command-line interface for Java.");
         System.out.println("Version Java: " + javaVersion);
         System.out.println("\nType 'help' to see the list of commands.");
@@ -17,7 +17,7 @@ public class Main {
                 System.out.print("Java-DOS >>> ");
                 userInput = input.next();
                 if (userInput.equals("about")) {
-                    System.out.println("Java-DOS v0.1.2 (C) 2025 user14923929 All rights reserved.");
+                    System.out.println("Java-DOS v0.1.3 (C) 2025 user14923929 All rights reserved.");
                     System.out.println("Java-DOS is a simple command-line interface for Java.");
                     System.out.println("Версия Java: " + javaVersion);
                 } else if (userInput.equals("dice")) {
