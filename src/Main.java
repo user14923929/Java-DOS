@@ -3,13 +3,15 @@ import java.util.Scanner;
 import java.math.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        Thread.sleep(3000);
+        System.out.println("Java-DOS v0.1.4 (C) 2025 user14923929 All rights reserved.");
+        Thread.sleep(5000);
         String javaVersion = System.getProperty("java.runtime.version");
         long startTime = System.currentTimeMillis();
         Scanner input = new Scanner(System.in);
         String userInput;
-        System.out.println("Java-DOS v0.1.3 (C) 2025 user14923929 All rights reserved.");
-        System.out.println("Java-DOS is a simple command-line interface for Java.");
+        System.out.println("Search new versions on https://github.com/user14923929/Java-DOS");
         System.out.println("Version Java: " + javaVersion);
         System.out.println("\nType 'help' to see the list of commands.");
         try {
@@ -17,8 +19,7 @@ public class Main {
                 System.out.print("Java-DOS >>> ");
                 userInput = input.next();
                 if (userInput.equals("about")) {
-                    System.out.println("Java-DOS v0.1.3 (C) 2025 user14923929 All rights reserved.");
-                    System.out.println("Java-DOS is a simple command-line interface for Java.");
+                    System.out.println("Java-DOS v0.1.4 (C) 2025 user14923929 All rights reserved.");
                     System.out.println("Версия Java: " + javaVersion);
                 } else if (userInput.equals("dice")) {
                     System.out.println(Math.round((Math.random() * 6) + 1));
